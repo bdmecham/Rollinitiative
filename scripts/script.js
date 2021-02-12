@@ -1,12 +1,15 @@
 // Add Function
 function addCharacter(name, num) {
     var newli = document.createElement("li");
-    newli.appendChild(document.createTextNode(num + " "));
-    newli.appendChild(document.createTextNode(name));
+    if(name != "" && num != ""){
+      newli.appendChild(document.createTextNode(num + " "));
+      newli.appendChild(document.createTextNode(name));
 
-    document.getElementById("init-list").appendChild(newli);
+      document.getElementById("init-list").appendChild(newli);
 
-    document.getElementById("list-input").reset();
+      document.getElementById("list-input").reset();
+    }
+    
 }
 
 // Sort Function
@@ -29,4 +32,17 @@ function sort() {
       switching = true;
     }
   }
+}
+
+// Advance Round Counter
+function nextRound() {
+  var round = document.getElementById("counter").innerHTML;
+  var count = parseInt(round.replace("Round: ", ""));
+  count++;
+  document.getElementById("counter").innerHTML = "Round: " + count;
+}
+
+// Clear All
+function clearAll() {
+  list = document.getElementById("init-list").innerHTML = "";
 }
