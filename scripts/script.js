@@ -45,4 +45,9 @@ function nextRound() {
 // Clear All
 function clearAll() {
   list = document.getElementById("init-list").innerHTML = "";
+
+  var round = document.getElementById("counter").innerHTML;
+  var count = parseInt(round.replace("Round: ", ""));
+  count = 0;
+  document.getElementById("counter").innerHTML = "Round: " + count;
 }
