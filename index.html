@@ -3,14 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Initive Tracker</title>
+    <title>Initiative Tracker</title>
 </head>
 <body>
-    <header>Initive Tracker</header>
+    <header>Initiative Tracker</header>
     <main>
-        
 
+        <div>
+            <p>Please Enter a name and a initiative roll!</p>
+            <form id="list-input">
+                <input type="text" name="charName" id="list-input-name" placeholder="Name">
+                <input type="number" name="initRoll" id="list-input-number" placeholder="Roll">
+                <input type="button" value="Add" onclick="addCharacter(charName.value,initRoll.value)">
+            </form>
+            
+        </div>
+        
+        <ul id="init-list">
+            <!-- <li>
+                12 Thorne
+            </li>
+            <li>
+                15 Leonel
+            </li>
+            <li>
+                8 Virram
+            </li>
+            <li>
+                21 Swift
+            </li>
+            <li>
+                10 Goblin Chief
+            </li> -->
+        </ul>
+
+        <button onclick="sort()">Sort</button>
     </main>
     <footer></footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
