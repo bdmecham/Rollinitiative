@@ -1,4 +1,19 @@
+/* colors
+#364652
+#BFB1C1
+#1A936F
+
+*/
 body{
-    background-color: #F8FFF4;
+    background-color: #BFB1C1;
+}
+
+ul {
+    list-style: none;
+}
+
+li div{
+    display: inline-block;
+    width: 20%;
 }
 
